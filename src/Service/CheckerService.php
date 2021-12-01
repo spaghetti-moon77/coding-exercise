@@ -19,7 +19,7 @@ class CheckerService
      * @param string $word
      * @return bool
      */
-    public function isPalindrome(string $word) : bool
+    public function isPalindrome(string $word): bool
     {
         $characterArray = str_split(strtolower($word));
 
@@ -49,7 +49,7 @@ class CheckerService
     public function isAnagram(
         string $word,
         string $comparison
-    ) : bool {
+    ): bool {
         // strip whitespace
         $wordStripped = str_replace(' ', '', $word);
         $comparisonStripped = str_replace(' ', '', $comparison);
@@ -73,7 +73,7 @@ class CheckerService
      * @param string $phrase
      * @return bool
      */    
-    public function isPangram(string $phrase) : bool
+    public function isPangram(string $phrase): bool
     {
         $alphabetArray = range('a', 'z');
 
