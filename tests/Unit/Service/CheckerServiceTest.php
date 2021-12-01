@@ -20,6 +20,28 @@ class CheckerServiceTest extends KernelTestCase
         $this->assertEquals(true, $result);
     }
 
+    public function testIsPalindromePhraseSuccess()
+    {
+        $service = new CheckerService();
+
+        $phrase = 'abcdef fedcba';
+
+        $result = $service->isPalindrome($phrase);
+
+        $this->assertEquals(true, $result);
+    }
+
+    public function testIsPalindromeNumberSuccess()
+    {
+        $service = new CheckerService();
+
+        $number = '1234554321';
+
+        $result = $service->isPalindrome($number);
+
+        $this->assertEquals(true, $result);
+    }
+
     public function testIsPalindromeDifferentCaseSuccess()
     {
         $service = new CheckerService();
